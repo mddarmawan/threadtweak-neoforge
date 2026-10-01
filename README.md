@@ -7,6 +7,10 @@ A NeoForge port of [ThreadTweak by getchoo](https://modrinth.com/mod/threadtweak
 - **Target:** Minecraft 26.2 / NeoForge 26.2.0.88 / Java 25
 - **Source:** https://github.com/mddarmawan/threadtweak-neoforge
 
+## Scope
+
+This port adjusts **thread priorities** (and reads its config). The Fabric original can also rebuild Minecraft's worker executors to change **thread counts**; on NeoForge 26.2 those executors are `final`, so that part is not available here. Everything this port sets is applied.
+
 ## Configuration
 
 On first launch, `config/threadtweak.properties` is created with the thread priorities (1 = lowest, 10 = highest):
