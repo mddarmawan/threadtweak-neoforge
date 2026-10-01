@@ -1,0 +1,35 @@
+# Mod metadata for ThreadTweak (NeoForge).
+
+license="${mod_license}"
+
+issueTrackerURL="https://github.com/mddarmawan/threadtweak-neoforge/issues"
+displayURL="https://github.com/mddarmawan/threadtweak-neoforge"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+credits="Original ThreadTweak by getchoo, UltimateBoomer and fantahund (https://modrinth.com/mod/threadtweak), MIT."
+authors="mddarmawan"
+description='''
+Improves and tweaks Minecraft CPU scheduling so the game thread and background workers get the priorities you want.
+
+NeoForge port of ThreadTweak, licensed MIT. Priorities are configurable in config/threadtweak.properties.
+'''
+
+[[mixins]]
+config="${mod_id}.mixins.json"
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"

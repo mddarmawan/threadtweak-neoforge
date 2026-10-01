@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.mddarmawan.threadtweak.mixins",
+  "compatibilityLevel": "JAVA_13",
+  "client": [
+    "client.ClientMainMixin",
+    "client.IntegratedServerMixin"
+  ],
+  "server": [
+    "server.ServerMainMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
